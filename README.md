@@ -24,8 +24,10 @@ Realistic 3D human generation from text prompts is a desirable yet challenging t
 git clone https://github.com/alvinliu0/HumanGaussian.git
 cd HumanGaussian
 
-pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+# python version: python==3.10.12
+<!-- pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118 -->
 pip install -r requirements.txt
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0
 
 # a modified gaussian splatting (+ depth, alpha rendering)
 git clone --recursive https://github.com/ashawkey/diff-gaussian-rasterization
