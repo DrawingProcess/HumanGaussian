@@ -1,0 +1,11 @@
+services:
+  pytorch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./:/HumanGaussian  # Mount the HumanGaussian folder to /app in the container
+    tty: true
