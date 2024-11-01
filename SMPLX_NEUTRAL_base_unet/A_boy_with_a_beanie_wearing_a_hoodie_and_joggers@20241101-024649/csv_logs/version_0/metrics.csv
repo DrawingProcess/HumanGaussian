@@ -1,0 +1,5 @@
+epoch,lr-Adam/f_dc,lr-Adam/f_rest,lr-Adam/opacity,lr-Adam/rotation,lr-Adam/scaling,lr-Adam/xyz,step,train/loss_opaque,train/loss_sparsity,train_params/lambda_opaque,train_params/lambda_sds,train_params/lambda_sparsity
+,0.0125,0.000625,0.01,0.001,0.005,0.0002,0,,,,,
+0,,,,,,,0,0.09738728404045105,0.1609090268611908,0.0,1.0,1.0
+,0.0125,0.000625,0.01,0.001,0.005,0.00019999999999999985,1,,,,,
+0,,,,,,,1,0.08824975788593292,0.15237750113010406,0.0,1.0,1.0

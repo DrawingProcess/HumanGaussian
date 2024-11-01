@@ -33,7 +33,8 @@ git+https://github.com/ashawkey/envlight.git
 # torchmetrics
 
 # deepfloyd
-xformers==0.0.22.post7
+# pip install -U xformers --index-url https://download.pytorch.org/whl/cu118
+# xformers==0.0.22.post7+cu118
 bitsandbytes==0.38.1
 sentencepiece
 safetensors
@@ -47,3 +48,5 @@ git+https://github.com/openai/CLIP.git
 
 # controlnet
 controlnet_aux
+
+git-lfs

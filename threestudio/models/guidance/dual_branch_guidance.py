@@ -94,7 +94,7 @@ class StableDiffusionGuidance(BaseObject):
             from models.unet_rgbdepth import UNet2DConditionModel
         except:
             from .models.unet_rgbdepth import UNet2DConditionModel
-        unet = UNet2DConditionModel.from_pretrained(self.cfg.model_key, subfolder="unet_ema").to(self.weights_dtype)
+        unet = UNet2DConditionModel.from_pretrained(self.cfg.model_key, subfolder="unet_ema", force_download=True).to(self.weights_dtype)
 
         vae = AutoencoderKL.from_pretrained(self.cfg.vae_key).to(self.weights_dtype)
 
