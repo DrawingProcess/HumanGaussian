@@ -13,4 +13,9 @@ pwd
 which python
 hostname
 
+. /data/sw/spack/share/spack/setup-env.sh
+spack find
+spack load cuda@11.7.1
+nvcc -V
+
 python launch.py --config configs/test.yaml --train --gpu 0 system.prompt_processor.prompt="A boy with a beanie wearing a hoodie and joggers"
